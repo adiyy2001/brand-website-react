@@ -1,0 +1,122 @@
+.office-location {
+    margin-bottom: 30px;
+}
+
+.office-location .thumbnail {
+    margin-bottom: 30px;
+}
+
+.office-location .thumbnail img {
+    width: 100%;
+}
+
+.office-location .content .title {
+    color: var(--color-white);
+    margin-bottom: 20px;
+}
+
+.office-location .content p {
+    color: var(--color-gray-2);
+    width: 70%;
+}
+
+.contact-info {
+    background-color: var(--color-dark);
+    border-radius: 14px;
+    padding: 60px 50px;
+    min-width: -webkit-min-content;
+    min-width: -moz-min-content;
+    min-width: min-content;
+    -webkit-box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.contact-info .title {
+    color: var(--color-white);
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    color: var(--color-gray-2);
+    width: 80%;
+}
+
+.contact-info .phone-number {
+    font-size: 48px;
+    color: var(--color-accent2);
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: 1199px) {
+    .contact-info .phone-number {
+        font-size: 42px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .contact-info .phone-number {
+        font-size: 34px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .contact-info .phone-number {
+        font-size: 30px;
+    }
+}
+
+.contact-info .phone-number a:hover {
+    color: var(--color-white);
+}
+
+.contact-address .section-heading {
+    margin-bottom: 180px;
+}
+
+@media only screen and (max-width: 991px) {
+    .contact-address .section-heading {
+        margin-bottom: 80px;
+    }
+}
+
+.contact-address .section-heading .title {
+    width: 100%;
+}
+
+.contact-address .address {
+    margin-bottom: 40px;
+}
+
+.contact-address .address:last-child {
+    margin-bottom: 0;
+}
+
+.contact-address .address .title {
+    color: var(--color-white);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.contact-address .address p {
+    font-family: var(--font-primary);
+    font-weight: 500;
+    font-size: 24px;
+    color: var(--color-gray-2);
+    width: 50%;
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: 991px) {
+    .contact-address .address p {
+        font-size: 18px;
+        width: 80%;
+    }
+}
+
+.contact-address .address p a {
+    color: var(--color-gray-2);
+}
+
+.contact-address .address p a:hover {
+    color: var(--color-white);
+}

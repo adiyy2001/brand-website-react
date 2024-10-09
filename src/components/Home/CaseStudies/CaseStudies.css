@@ -1,0 +1,122 @@
+
+.case-study-featured {
+    margin-bottom: 60px;
+}
+
+.case-study-featured .section-heading .title {
+    letter-spacing: -0.045em;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    padding-bottom: 5px;
+}
+
+@media only screen and (max-width: 575px) {
+    .case-study-featured .section-heading .title {
+        -webkit-line-clamp: 2;
+    }
+}
+
+.case-study-featured .section-heading p {
+    width: 100%;
+    font-size: 16px;
+}
+
+.case-study-counterup {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.case-study-counterup .single-counterup {
+    margin-right: 60px;
+    padding-right: 60px;
+    border-right: 1px solid var(--color-ghost);
+}
+
+.case-study-counterup .single-counterup:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: none;
+}
+
+@media only screen and (max-width: 1199px) {
+    .case-study-counterup .single-counterup {
+        margin-right: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .case-study-counterup .single-counterup {
+        margin-right: 30px;
+        padding-right: 30px;
+    }
+}
+
+.case-study-counterup .count-number {
+    color: var(--color-rose);
+    letter-spacing: -0.045em;
+    margin-bottom: 0;
+    padding: 0 6px;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+    .case-study-counterup .count-number {
+        padding: 0 2px;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .case-study-counterup .count-number {
+        padding: 0;
+    }
+}
+
+.case-study-counterup .count-number span {
+    vertical-align: middle;
+}
+
+.case-study-counterup .count-number span.symbol {
+    margin-left: -6px;
+}
+
+.case-study-featured-thumb {
+    text-align: right;
+}
+
+@media only screen and (max-width: 991px) {
+    .case-study-featured-thumb {
+        text-align: left;
+        margin-bottom: 30px;
+    }
+}
+
+.case-study-featured-thumb img {
+    display: inline-block;
+}
+
+.case-study-page-area .case-study-featured-thumb {
+    margin-bottom: 150px;
+}
+
+@media only screen and (max-width: 991px) {
+    .case-study-page-area .case-study-featured-thumb {
+        margin-bottom: 60px;
+    }
+}
+
+.case-study-solution {
+    position: relative;
+    z-index: 1;
+}
+
+.case-study-solution .section-heading p {
+    width: 100%;
+}
