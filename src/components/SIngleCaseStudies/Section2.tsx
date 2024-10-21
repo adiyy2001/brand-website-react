@@ -7,11 +7,11 @@ interface Section2Props {
   theme: 'dark' | 'light';
 }
 
-import macbookImage from '../../../assets/media/SingleCaseStudies/macbook.webp';
+import macbookImage from '../../assets/media/SingleCaseStudies/macbook.webp';
 import Flex from './styles/Flex';
 import { StyledParagraph, StyledSpan } from './styles/Peragraph';
 
-import phone1 from '../../../assets/media/SingleCaseStudies/phones/1.png';
+import phone1 from '../../assets/media/SingleCaseStudies/phones/1.png';
 const phones = [
   {
     url: phone1,
@@ -204,13 +204,7 @@ const Section2: FC<Section2Props> = () => {
     ],
   };
   return (
-    <Flex
-      className="container"
-      gap="20px 0"
-      mdGap="24px 0"
-      direction="column"
-      lgGap="60px 0"
-    >
+    <Flex gap="20px 0" mdGap="24px 0" direction="column" lgGap="60px 0">
       <Container>
         <div className="container">
           <OverlayText>
@@ -252,35 +246,43 @@ const Section2: FC<Section2Props> = () => {
           </svg>
         </Button>
       </Container>
-      <StyledParagraph style={{ fontStyle: 'italic' }}>
-        Quam lorem vivamus at porttitor montes molestie egestas elit. Auctor
-        rhoncus sed adipiscing pulvinar laoreet hendrerit tincidunt mauris.
-        Pulvinar risus consectetur id eu natoque semper pellentesque. Sit dolor
-        gravida cursus quis ante. Sed luctus vitae tellus imperdiet.
-      </StyledParagraph>
-      <StyledDiv>
-        <StyledParagraph>
-          Dictum felis arcu vulputate massa mi est vulputate vulputate. Justo
-          sed morbi turpis malesuada amet. Morbi faucibus parturient vivamus in
-          arcu odio. Scelerisque tristique semper sapien sagittis egestas
-          condimentum. Quam lorem vivamus at porttitor montes molestie egestas
-          elit. Auctor rhoncus sed adipiscing pulvinar laoreet{' '}
-          <StyledSpan color="#7878F2">
-            {
-              '<hendrerit tincidunt mauris. Pulvinar risus consectetur id eu natoque semper pellentesque>'
-            }
-          </StyledSpan>
-          . Sit dolor gravida cursus quis ante. Sed luctus vitae tellus
-          imperdiet.
+      <Flex
+        direction="column"
+        gap="20px 0px"
+        mdGap="24px 0px"
+        xlGap="60px 0px"
+        className="container"
+      >
+        <StyledParagraph style={{ fontStyle: 'italic' }}>
+          Quam lorem vivamus at porttitor montes molestie egestas elit. Auctor
+          rhoncus sed adipiscing pulvinar laoreet hendrerit tincidunt mauris.
+          Pulvinar risus consectetur id eu natoque semper pellentesque. Sit
+          dolor gravida cursus quis ante. Sed luctus vitae tellus imperdiet.
         </StyledParagraph>
-      </StyledDiv>
-      <Slider {...settings}>
-        {phones.map((phone) => (
-          <Slide key={phone.id}>
-            <img src={phone.url} alt={phone.title} />
-          </Slide>
-        ))}
-      </Slider>
+        <StyledDiv>
+          <StyledParagraph>
+            Dictum felis arcu vulputate massa mi est vulputate vulputate. Justo
+            sed morbi turpis malesuada amet. Morbi faucibus parturient vivamus
+            in arcu odio. Scelerisque tristique semper sapien sagittis egestas
+            condimentum. Quam lorem vivamus at porttitor montes molestie egestas
+            elit. Auctor rhoncus sed adipiscing pulvinar laoreet{' '}
+            <StyledSpan color="#7878F2">
+              {
+                '<hendrerit tincidunt mauris. Pulvinar risus consectetur id eu natoque semper pellentesque>'
+              }
+            </StyledSpan>
+            . Sit dolor gravida cursus quis ante. Sed luctus vitae tellus
+            imperdiet.
+          </StyledParagraph>
+        </StyledDiv>
+        <Slider {...settings}>
+          {phones.map((phone) => (
+            <Slide key={phone.id}>
+              <img src={phone.url} alt={phone.title} />
+            </Slide>
+          ))}
+        </Slider>
+      </Flex>
     </Flex>
   );
 };
