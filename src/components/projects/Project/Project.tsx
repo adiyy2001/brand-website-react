@@ -1,6 +1,7 @@
-import './Project.css';
 import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import './Project.css';
+
 import 'swiper/css';
 import 'swiper/css/autoplay';
 import 'swiper/css/pagination';

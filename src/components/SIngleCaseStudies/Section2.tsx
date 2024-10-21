@@ -8,8 +8,8 @@ interface Section2Props {
 }
 
 import macbookImage from '../../../assets/media/SingleCaseStudies/macbook.webp';
-import Flex from '../styles/Flex';
-import { StyledParagraph, StyledSpan } from '../styles/Peragraph';
+import Flex from './styles/Flex';
+import { StyledParagraph, StyledSpan } from './styles/Peragraph';
 
 import phone1 from '../../../assets/media/SingleCaseStudies/phones/1.png';
 const phones = [
@@ -168,7 +168,7 @@ const SamplePrevArrow: FC<ArrowProps> = ({ className, style, onClick }) => {
   );
 };
 
-const Section2: FC<Section2Props> = ({ theme }) => {
+const Section2: FC<Section2Props> = () => {
   const settings = {
     infinite: true,
     speed: 500,

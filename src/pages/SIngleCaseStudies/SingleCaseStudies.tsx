@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
 import Section1 from '../../components/SIngleCaseStudies/section1/Section1';
-import Section2 from '../../components/SIngleCaseStudies/section1/Section2.tsx';
+import Section2 from '../../components/SIngleCaseStudies/Section2.tsx';
 import Flex from '../../components/SIngleCaseStudies/styles/Flex.tsx';
 import { darkTheme, lightTheme } from './theme.ts';
 
