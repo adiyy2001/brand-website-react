@@ -1,12 +1,13 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Suspense } from 'react';
 import { Spinner } from 'react-bootstrap';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import Project from './components/projects/Project/Project';
 import AboutUs from './pages/AboutUs/About';
 import Contact from './pages/Contact/Contact';
 import Home from './pages/Home';
+import SingleCaseStudies from './pages/SIngleCaseStudies/SingleCaseStudies';
 import Services from './pages/Services/Services';
 import { Projects } from './pages/projects/projects';
-import Project from './components/projects/Project/Project';
 
 const Loader: React.FC = () => (
   <div>
@@ -24,6 +25,7 @@ const App: React.FC = () => {
           <Route path="/service" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/single-case-study" element={<SingleCaseStudies />} />
           <Route
             path="/projects/donations"
             element={
