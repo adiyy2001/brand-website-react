@@ -119,12 +119,63 @@ const Slide = styled.div`
   }
 `;
 
-const Section2: FC<Section2Props> = () => {
+interface ArrowProps {
+  className?: string;
+  style?: React.CSSProperties;
+  onClick?: () => void;
+}
+
+const SlideArrowPrev = styled.div`
+  &::before {
+    color: white !important;
+    background: black;
+    border-radius: 50%;
+  }
+  left: -2px;
+  z-index: 10;
+`;
+
+const SlideArrowNext = styled.div`
+  &::before {
+    color: white !important;
+    background: black;
+    border-radius: 50%;
+  }
+  right: -2px;
+  z-index: 10;
+`;
+const SampleNextArrow: FC<ArrowProps> = ({ className, style, onClick }) => {
+  return (
+    <SlideArrowNext
+      className={className}
+      style={{
+        ...style,
+      }}
+      onClick={onClick}
+    ></SlideArrowNext>
+  );
+};
+
+const SamplePrevArrow: FC<ArrowProps> = ({ className, style, onClick }) => {
+  return (
+    <SlideArrowPrev
+      className={className}
+      style={{
+        ...style,
+      }}
+      onClick={onClick}
+    ></SlideArrowPrev>
+  );
+};
+
+const Section2: FC<Section2Props> = ({ theme }) => {
   const settings = {
     infinite: true,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 4,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
     responsive: [
       {
         breakpoint: 1024,
