@@ -3,15 +3,26 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
 import styled from 'styled-components';
-interface Section2Props {
-  theme: 'dark' | 'light';
+import macbookImage from '../../../assets/media/SingleCaseStudies/macbook.webp';
+import Flex from '../styles/Flex';
+import { StyledParagraph, StyledSpan } from '../styles/Peragraph';
+interface Phone {
+  url: string;
+  title: string;
+  id: number;
 }
 
-import macbookImage from '../../assets/media/SingleCaseStudies/macbook.webp';
-import Flex from './styles/Flex';
-import { StyledParagraph, StyledSpan } from './styles/Peragraph';
+interface Section2Props {
+  theme: 'dark' | 'light';
+  overlayTitleLight: string;
+  overlayTitleDark: string;
+  title: string;
+  paragraph: string;
+  phones: Phone[];
+  macbookImage: string;
+}
 
-import phone1 from '../../assets/media/SingleCaseStudies/phones/1.png';
+import phone1 from '../../../assets/media/SingleCaseStudies/phones/1.png';
 const phones = [
   {
     url: phone1,
