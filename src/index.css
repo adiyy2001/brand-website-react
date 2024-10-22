@@ -25,23 +25,27 @@
   --color-ship-gray: #42424a;
   --color-ghost: #c7c7d5;
   --color-mercury: #e5e5e5;
-  --gradient-primary: linear-gradient(90deg,
-      #ecf2f6 0%,
-      rgba(236, 242, 246, 0) 70.31%);
+  --gradient-primary: linear-gradient(
+    90deg,
+    #ecf2f6 0%,
+    rgba(236, 242, 246, 0) 70.31%
+  );
   --gradient-blue: linear-gradient(145.92deg, #5956e9 20.18%, #9991ff 76.9%);
   --gradient-accent: linear-gradient(180deg, #fab8c4 0%, #ffedf0 100%);
-  --gradient-white: linear-gradient(266.3deg,
-      rgba(236, 242, 246, 0) 7.84%,
-      #ecf2f6 29.1%,
-      rgba(236, 242, 246, 0) 64.32%);
+  --gradient-white: linear-gradient(
+    266.3deg,
+    rgba(236, 242, 246, 0) 7.84%,
+    #ecf2f6 29.1%,
+    rgba(236, 242, 246, 0) 64.32%
+  );
   --gradient-dark: linear-gradient(180deg, #27272e 0%, #303035 100%);
   --border-light: 1px solid #e3e6e9;
   --border-lighter: 1px solid #ecf2f6;
   --border-dark: 1px solid var(--color-ship-gray);
   --border-gray: 1px solid var(--color-gray-4);
-  --font-primary: "DM Sans", sans-serif;
-  --font-secondary: "Poppins", sans-serif;
-  --font-awesome: "Font Awesome 5 Pro";
+  --font-primary: 'DM Sans', sans-serif;
+  --font-secondary: 'Poppins', sans-serif;
+  --font-awesome: 'Font Awesome 5 Pro';
   --transition: all 0.3s ease-in-out;
   --font-body-1: 18px;
   --font-body-2: 16px;
@@ -60,9 +64,10 @@
 /*-------------------------
       Reset Styels
   -------------------------*/
-  html, body {
-    overflow-x: hidden;
-  }
+html,
+body {
+  overflow-x: hidden;
+}
 a {
   display: inline-block;
   text-decoration: none;
@@ -126,7 +131,7 @@ ol.list-style li::marker {
   margin-right: -15px;
 }
 
-.row>[class*="col"] {
+.row > [class*='col'] {
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -136,7 +141,7 @@ ol.list-style li::marker {
   margin-right: 0;
 }
 
-.row.g-0>[class*="col"] {
+.row.g-0 > [class*='col'] {
   padding-left: 0;
   padding-right: 0;
 }
@@ -147,7 +152,7 @@ ol.list-style li::marker {
     margin-right: -35px;
   }
 
-  .row-35>[class*="col"] {
+  .row-35 > [class*='col'] {
     padding-left: 35px;
     padding-right: 35px;
   }
@@ -157,7 +162,7 @@ ol.list-style li::marker {
     margin-right: -40px;
   }
 
-  .row-40>[class*="col"] {
+  .row-40 > [class*='col'] {
     padding-left: 40px;
     padding-right: 40px;
   }
@@ -167,7 +172,7 @@ ol.list-style li::marker {
     margin-right: -45px;
   }
 
-  .row-45>[class*="col"] {
+  .row-45 > [class*='col'] {
     padding-left: 45px;
     padding-right: 45px;
   }
@@ -238,7 +243,6 @@ h1,
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
-
   h1,
   .h1 {
     font-size: 68px;
@@ -246,7 +250,6 @@ h1,
 }
 
 @media only screen and (max-width: 1199px) {
-
   h1,
   .h1 {
     font-size: 68px;
@@ -254,7 +257,6 @@ h1,
 }
 
 @media only screen and (max-width: 767px) {
-
   h1,
   .h1 {
     font-size: 48px;
@@ -268,7 +270,6 @@ h2,
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
-
   h2,
   .h2 {
     font-size: 56px;
@@ -276,7 +277,6 @@ h2,
 }
 
 @media only screen and (max-width: 1199px) {
-
   h2,
   .h2 {
     font-size: 56px;
@@ -284,7 +284,6 @@ h2,
 }
 
 @media only screen and (max-width: 767px) {
-
   h2,
   .h2 {
     font-size: 38px;
@@ -292,7 +291,6 @@ h2,
 }
 
 @media only screen and (max-width: 479px) {
-
   h2,
   .h2 {
     font-size: 34px;
@@ -306,7 +304,6 @@ h3,
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
-
   h3,
   .h3 {
     font-size: 40px;
@@ -314,7 +311,6 @@ h3,
 }
 
 @media only screen and (max-width: 1199px) {
-
   h3,
   .h3 {
     font-size: 36px;
@@ -322,7 +318,6 @@ h3,
 }
 
 @media only screen and (max-width: 767px) {
-
   h3,
   .h3 {
     font-size: 32px;
@@ -336,7 +331,6 @@ h4,
 }
 
 @media only screen and (max-width: 991px) {
-
   h4,
   .h4 {
     font-size: 26px;
@@ -344,7 +338,6 @@ h4,
 }
 
 @media only screen and (max-width: 767px) {
-
   h4,
   .h4 {
     font-size: 20px;
@@ -358,7 +351,6 @@ h5,
 }
 
 @media only screen and (max-width: 767px) {
-
   h5,
   .h5 {
     font-size: 20px;
@@ -372,7 +364,6 @@ h6,
 }
 
 @media only screen and (max-width: 767px) {
-
   h6,
   .h6 {
     font-size: 18px;
@@ -537,7 +528,7 @@ input {
 }
 
 .input-group:before {
-  content: url("../media/icon/message.webp");
+  content: url('../media/icon/message.webp');
   position: absolute;
   left: 30px;
   top: 24px;
@@ -759,7 +750,7 @@ input {
 }
 
 .breadcrumb li:after {
-  content: ".";
+  content: '.';
   color: var(--color-gray-2);
   font-size: 18px;
   position: absolute;
@@ -1053,7 +1044,7 @@ input {
 }
 
 .axil-btn.btn-fill-primary::after {
-  content: "";
+  content: '';
   height: 300px;
   width: 300px;
   background-color: var(--color-link);
@@ -1325,7 +1316,7 @@ input {
   margin: 0 0 30px;
 }
 
-.heading-left p+p {
+.heading-left p + p {
   margin: 0 0 40px;
 }
 
@@ -2143,7 +2134,7 @@ input {
 }
 
 .shape-group-20 .shape.shape-8.marque-images {
-  background-image: url("../media/others/designer-text.webp");
+  background-image: url('../media/others/designer-text.webp');
   background-repeat: repeat-x;
   background-size: auto;
   height: 250px;
@@ -2537,7 +2528,7 @@ input {
 }
 
 .slick-arrow-nav .slick-arrow.slick-next::before {
-  content: "\f105";
+  content: '\f105';
 }
 
 .slick-arrow-nav .slick-arrow.slick-prev {
@@ -2551,7 +2542,7 @@ input {
 }
 
 .slick-arrow-nav .slick-arrow.slick-prev::before {
-  content: "\f104";
+  content: '\f104';
 }
 
 .section-padding {
@@ -2821,7 +2812,6 @@ input {
   opacity: 0;
 }
 
-
 /*-------------------------
     Service
 -------------------------*/
@@ -2859,14 +2849,16 @@ input {
 }
 
 .services-grid:after {
-  content: "";
+  content: '';
   height: 100%;
   width: 100%;
   background: var(--gradient-dark);
   border: 1px solid;
-  border-image-source: linear-gradient(0deg,
-      #27272e 64.45%,
-      rgba(74, 75, 86, 0.72) 100%);
+  border-image-source: linear-gradient(
+    0deg,
+    #27272e 64.45%,
+    rgba(74, 75, 86, 0.72) 100%
+  );
   border-radius: 30px;
   position: absolute;
   top: 0;
@@ -2930,7 +2922,7 @@ input {
 }
 
 .services-grid .content .more-btn:before {
-  content: "";
+  content: '';
   width: 34px;
   height: 1px;
   background-color: var(--color-white);
@@ -2975,17 +2967,21 @@ input {
 }
 
 .services-grid.service-style-2 {
-  background: -webkit-gradient(linear,
-      left top,
-      left bottom,
-      from(#f8f8f8),
-      to(rgba(255, 255, 255, 0)));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#f8f8f8),
+    to(rgba(255, 255, 255, 0))
+  );
   background: -o-linear-gradient(top, #f8f8f8 0%, rgba(255, 255, 255, 0) 100%);
   background: linear-gradient(180deg, #f8f8f8 0%, rgba(255, 255, 255, 0) 100%);
   border: 1px solid;
-  border-image-source: linear-gradient(90deg,
-      #ecf2f6 0%,
-      rgba(236, 242, 246, 0) 70.31%);
+  border-image-source: linear-gradient(
+    90deg,
+    #ecf2f6 0%,
+    rgba(236, 242, 246, 0) 70.31%
+  );
   background-color: var(--color-white);
   margin-bottom: 30px;
 }
@@ -3095,7 +3091,7 @@ input {
 }
 
 .service-scroll-nav ul li a::after {
-  content: "";
+  content: '';
   height: 2px;
   width: 0;
   background-color: var(--color-primary);
@@ -3122,4 +3118,3 @@ input {
 .service-scroll-nav ul li.current a::after {
   width: 100%;
 }
-

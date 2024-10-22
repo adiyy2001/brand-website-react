@@ -7,6 +7,8 @@ import Section1 from '../../components/SIngleCaseStudies/section1/Section1';
 import Section2 from '../../components/SIngleCaseStudies/section2/Section2.tsx';
 import Section3 from '../../components/SIngleCaseStudies/section3/Section3.tsx';
 import Section4 from '../../components/SIngleCaseStudies/section4/Section4.tsx';
+import Section5 from '../../components/SIngleCaseStudies/section5/Section5.tsx';
+import Section6 from '../../components/SIngleCaseStudies/section6/Section6.tsx';
 import Flex from '../../components/SIngleCaseStudies/styles/Flex.tsx';
 import { darkTheme, lightTheme } from './theme.ts';
 const GlobalStyle = createGlobalStyle`
@@ -142,7 +144,7 @@ const SingleCaseStudies = () => {
         <Section4
           theme={theme}
           darkContent={{
-            sectionHeading: 'Section one header',
+            sectionHeading: 'Section two header',
 
             description: [
               {
@@ -167,6 +169,52 @@ const SingleCaseStudies = () => {
             ],
             items: Section4Items,
           }}
+        />
+        <Section5 theme={theme} />
+        <Section6
+          content={{
+            sectionHeading: 'Third section header',
+            title2: 'Nazwa pierwszej korzyści',
+            description:
+              'Opis funkcjonalności appki. Dictum felis arcu vulputate massa mi est vulputate vulputate. Justo sed morbi turpis malesuada amet. Morbi faucibus parturient vivamus in arcu odio. Scelerisque tristique semper sapien sagittis egestas condimentum. Quam lorem vivamus at porttitor montes molestie egestas elit. Auctor rhoncus sed adipiscing pulvinar laoreet hendrerit tincidunt mauris. Pulvinar risus consectetur id eu natoque semper pellentesque. Sit dolor gravida cursus quis ante. Sed luctus vitae tellus imperdiet.',
+            list: [
+              {
+                name: 'Technology Used',
+                icon: <RubyIcon />,
+              },
+              {
+                name: 'Technology Used',
+                icon: <RubyIcon />,
+              },
+              {
+                name: 'Technology Used',
+                icon: <RubyIcon />,
+              },
+              {
+                name: 'Technology Used',
+                icon: <RubyIcon />,
+              },
+              {
+                name: 'Technology Used',
+                icon: <RubyIcon />,
+              },
+            ],
+            images: [
+              {
+                imgAlt: 'Alt',
+                imgSrc: phone,
+              },
+              {
+                imgAlt: 'Alt',
+                imgSrc: phone,
+              },
+              {
+                imgAlt: 'Alt',
+                imgSrc: phone,
+              },
+            ],
+          }}
+          theme={theme}
         />
       </Flex>
     </ThemeProvider>

@@ -1,72 +1,79 @@
 @font-face {
-    font-family: 'FontAwesomeBrands';
-    src: url('/fonts/fa-brands-400.eot');
-    src: url('/fonts/fa-brands-400.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/fa-brands-400.woff2') format('woff2'),
-         url('/fonts/fa-brands-400.woff') format('woff'),
-         url('/fonts/fa-brands-400.ttf') format('truetype'),
-         url('/fonts/fa-brands-400.svg#fontawesome') format('svg');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'FontAwesomeDuotone';
-    src: url('/fonts/fa-duotone-900.eot');
-    src: url('/fonts/fa-duotone-900.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/fa-duotone-900.woff2') format('woff2'),
-         url('/fonts/fa-duotone-900.woff') format('woff'),
-         url('/fonts/fa-duotone-900.ttf') format('truetype'),
-         url('/fonts/fa-duotone-900.svg#fontawesome') format('svg');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'FontAwesomeLight';
-    src: url('/fonts/fa-light-300.eot');
-    src: url('/fonts/fa-light-300.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/fa-light-300.woff2') format('woff2'),
-         url('/fonts/fa-light-300.woff') format('woff'),
-         url('/fonts/fa-light-300.ttf') format('truetype'),
-         url('/fonts/fa-light-300.svg#fontawesome') format('svg');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'FontAwesomeRegular';
-    src: url('/fonts/fa-regular-400.eot');
-    src: url('/fonts/fa-regular-400.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/fa-regular-400.woff2') format('woff2'),
-         url('/fonts/fa-regular-400.woff') format('woff'),
-         url('/fonts/fa-regular-400.ttf') format('truetype'),
-         url('/fonts/fa-regular-400.svg#fontawesome') format('svg');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'FontAwesomeSolid';
-    src: url('/fonts/fa-solid-900.eot');
-    src: url('/fonts/fa-solid-900.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/fa-solid-900.woff2') format('woff2'),
-         url('/fonts/fa-solid-900.woff') format('woff'),
-         url('/fonts/fa-solid-900.ttf') format('truetype'),
-         url('/fonts/fa-solid-900.svg#fontawesome') format('svg');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'Slick';
-    src: url('/fonts/slick.eot');
-    src: url('/fonts/slick.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/slick.woff') format('woff'),
-         url('/fonts/slick.ttf') format('truetype'),
-         url('/fonts/slick.svg#slick') format('svg');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  
+  font-family: 'FontAwesomeBrands';
+  src: url('/fonts/fa-brands-400.eot');
+  src: url('/fonts/fa-brands-400.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/fa-brands-400.woff2') format('woff2'),
+    url('/fonts/fa-brands-400.woff') format('woff'),
+    url('/fonts/fa-brands-400.ttf') format('truetype'),
+    url('/fonts/fa-brands-400.svg#fontawesome') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Terminus2';
+  src: url('./fonts/Terminus-700.woff') format('woff'),
+    url('./fonts/Terminus-700.woff2') format('woff2'),
+    url('./fonts/Terminus-700.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FontAwesomeDuotone';
+  src: url('/fonts/fa-duotone-900.eot');
+  src: url('/fonts/fa-duotone-900.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/fa-duotone-900.woff2') format('woff2'),
+    url('/fonts/fa-duotone-900.woff') format('woff'),
+    url('/fonts/fa-duotone-900.ttf') format('truetype'),
+    url('/fonts/fa-duotone-900.svg#fontawesome') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FontAwesomeLight';
+  src: url('/fonts/fa-light-300.eot');
+  src: url('/fonts/fa-light-300.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/fa-light-300.woff2') format('woff2'),
+    url('/fonts/fa-light-300.woff') format('woff'),
+    url('/fonts/fa-light-300.ttf') format('truetype'),
+    url('/fonts/fa-light-300.svg#fontawesome') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FontAwesomeRegular';
+  src: url('/fonts/fa-regular-400.eot');
+  src: url('/fonts/fa-regular-400.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/fa-regular-400.woff2') format('woff2'),
+    url('/fonts/fa-regular-400.woff') format('woff'),
+    url('/fonts/fa-regular-400.ttf') format('truetype'),
+    url('/fonts/fa-regular-400.svg#fontawesome') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FontAwesomeSolid';
+  src: url('/fonts/fa-solid-900.eot');
+  src: url('/fonts/fa-solid-900.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/fa-solid-900.woff2') format('woff2'),
+    url('/fonts/fa-solid-900.woff') format('woff'),
+    url('/fonts/fa-solid-900.ttf') format('truetype'),
+    url('/fonts/fa-solid-900.svg#fontawesome') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Slick';
+  src: url('/fonts/slick.eot');
+  src: url('/fonts/slick.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/slick.woff') format('woff'),
+    url('/fonts/slick.ttf') format('truetype'),
+    url('/fonts/slick.svg#slick') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

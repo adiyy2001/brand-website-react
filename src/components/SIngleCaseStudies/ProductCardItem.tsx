@@ -1,5 +1,7 @@
-import { FC } from 'react';
+import { FC, useState } from 'react';
 import styled from 'styled-components';
+import LaptopDetails from './modals/LaptopFeatureModal';
+import Modal from './modals/modal';
 import { Heading4 } from './styles/Heading';
 import { StyledParagraph } from './styles/Peragraph';
 
@@ -34,14 +36,30 @@ const CardImageContainer = styled.div`
 `;
 
 const ProductCardItem: FC<ProductCardProp> = ({ item }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const CloseModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
-    <CardWrapper>
-      <CardImageContainer>
-        <img src={item.imgSrc} alt={item.imgAlt} />
-      </CardImageContainer>
-      <Heading4>{item.title}</Heading4>
-      <StyledParagraph>{item.description}</StyledParagraph>
-    </CardWrapper>
+    <>
+      <CardWrapper>
+        <CardImageContainer>
+          <img
+            onClick={() => setIsModalOpen((prev) => !prev)}
+            src={item.imgSrc}
+            alt={item.imgAlt}
+          />
+        </CardImageContainer>
+        <Heading4>{item.title}</Heading4>
+        <StyledParagraph>{item.description}</StyledParagraph>
+      </CardWrapper>
+
+      <Modal onClose={CloseModal} isOpen={isModalOpen}>
+        <LaptopDetails />
+      </Modal>
+    </>
   );
 };
 

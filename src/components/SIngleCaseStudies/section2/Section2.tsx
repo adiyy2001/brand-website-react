@@ -1,9 +1,11 @@
-import { FC } from 'react';
+import { FC, useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
 import styled from 'styled-components';
+import code from '../../../assets/media/SingleCaseStudies/code.png';
 import macbookImage from '../../../assets/media/SingleCaseStudies/macbook.webp';
+import phone from '../../../assets/media/SingleCaseStudies/phones/2.png';
 import Flex from '../styles/Flex';
 import { StyledParagraph, StyledSpan } from '../styles/Peragraph';
 interface Phone {
@@ -23,6 +25,7 @@ interface Section2Props {
 }
 
 import phone1 from '../../../assets/media/SingleCaseStudies/phones/1.png';
+import PhoneModal from '../modals/PhoneModal';
 const phones = [
   {
     url: phone1,
@@ -180,6 +183,12 @@ const SamplePrevArrow: FC<ArrowProps> = ({ className, style, onClick }) => {
 };
 
 const Section2: FC<Section2Props> = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const CloseModal = () => {
+    setIsModalOpen(false);
+  };
+
   const settings = {
     infinite: true,
     speed: 500,
@@ -288,12 +297,29 @@ const Section2: FC<Section2Props> = () => {
         </StyledDiv>
         <Slider {...settings}>
           {phones.map((phone) => (
-            <Slide key={phone.id}>
+            <Slide
+              onClick={() => setIsModalOpen((prev) => !prev)}
+              key={phone.id}
+            >
               <img src={phone.url} alt={phone.title} />
             </Slide>
           ))}
         </Slider>
       </Flex>
+      <PhoneModal
+        heading="GrantsFinder.eu:~rc_c$"
+        title="Nazwa funkcjonalności"
+        onClose={CloseModal}
+        isOpen={isModalOpen}
+        modalImg1={{
+          imgAlt: 'Alt',
+          imgSrc: phone,
+        }}
+        modalImg2={{
+          imgAlt: 'Alt',
+          imgSrc: code,
+        }}
+      />
     </Flex>
   );
 };

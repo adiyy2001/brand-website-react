@@ -9,6 +9,7 @@ const Title = styled.h2`
   font-size: 1.5rem;
   text-align: center;
   font-weight: bold;
+  font-family: 'Terminus2' !important;
   text-transform: uppercase;
   margin: 0 !important;
   color: ${({ theme }) => theme.text} !important;
